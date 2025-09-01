@@ -96,3 +96,121 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>آرشیو موسیقی Morti</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Vazir', sans-serif;
+      direction: rtl;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .search-bar {
+      margin: 20px;
+      text-align: center;
+    }
+    input[type="text"] {
+      padding: 10px;
+      width: 80%;
+      max-width: 400px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .songs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .song-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 250px;
+      padding: 15px;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .song-card:hover {
+      transform: scale(1.03);
+    }
+    .song-card h3 {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+    .song-card p {
+      color: #555;
+      margin-bottom: 10px;
+    }
+    .song-card a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>آرشیو موسیقی Morti</h1>
+</header>
+
+<div class="search-bar">
+  <input type="text" id="searchInput" placeholder="جستجوی آهنگ..." onkeyup="filterSongs()">
+</div>
+
+<section class="songs" id="songList">
+  <div class="song-card">
+    <h3>تو ای پری کجایی</h3>
+    <p>حسین قوامی</p>
+    <a href="songs/to-ey-pari.mp3" download>دانلود</a>
+  </div>
+  <div class="song-card">
+    <h3>دل دیوونه</h3>
+    <p>محسن یگانه</p>
+    <a href="songs/del-divoone.mp3" download>دانلود</a>
+  </div>
+  <div class="song-card">
+    <h3>بندری غروب</h3>
+    <p>Morti</p>
+    <a href="songs/bandari-ghoroub.mp3" download>دانلود</a>
+  </div>
+</section>
+
+<footer>
+  طراحی شده با عشق در بندر خورشهاب | سود سالانه ۲۷.۵٪ | نقدشوندگی بالا
+</footer>
+
+<script>
+  function filterSongs() {
+    const input = document.getElementById("searchInput").value.toLowerCase();
+    const cards = document.querySelectorAll(".song-card");
+    cards.forEach(card => {
+      const title = card.querySelector("h3").textContent.toLowerCase();
+      const artist = card.querySelector("p").textContent.toLowerCase();
+      card.style.display = (title.includes(input) || artist.includes(input)) ? "block" : "none";
+    });
+  }
+</script>
+
+</body>
+</html>
