@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>تنظیمات سایت</title>
+  <style>
+    @font-face {
+      font-family: 'BNazanin';
+      src: url('https://cdn.fontcdn.ir/Font/Persian/BNazanin/BNazanin.woff2') format('woff2'),
+           url('https://cdn.fontcdn.ir/Font/Persian/BNazanin/BNazanin.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      font-family: 'BNazanin', serif;
+      background: #fdf6e3;
+      color: #333;
+      padding: 40px;
+      text-align: right;
+      direction: rtl;
+    }
+
+    h1 {
+      color: #b58900;
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    .setting-box {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      padding: 20px;
+      max-width: 500px;
+      margin: 0 auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+
+    select, input[type="color"] {
+      width: 100%;
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #aaa;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #777;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>⚙️ تنظیمات سایت</h1>
+  <div class="setting-box">
+    <label for="themeColor">رنگ پس‌زمینه:</label>
+    <input type="color" id="themeColor" name="themeColor" value="#fdf6e3">
+
+    <label for="fontSelect">فونت نوشته‌ها:</label>
+    <select id="fontSelect" name="fontSelect">
+      <option value="BNazanin">بی‌نازنین (فعلی)</option>
+      <option value="Tahoma">Tahoma</option>
+      <option value="Arial">Arial</option>
+    </select>
+
+    <label for="language">زبان سایت:</label>
+    <select id="language" name="language">
+      <option value="fa">فارسی</option>
+      <option value="en">English</option>
+    </select>
+  </div>
+
+  <div class="footer">
+    طراحی شده توسط Morti | نسخه‌ی آزمایشی تنظیمات
+  </div>
+</body>
+</html>
+افزودن صفحه تنظیمات با فونت بی‌نازنین
