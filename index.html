@@ -1,109 +1,98 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-  <meta charset="UTF-8">
-  <title>هایپری ملودی و شعر</title>
-  <style>
-    body { font-family: sans-serif; background: #fefefe; color: #333; text-align: center; padding: 40px; }
-    h1 { color: #b58900; }
-    p { font-size: 1.2em; line-height: 1.6; }
-    .footer { margin-top: 40px; font-size: 0.9em; color: #777; }
-  </style>
+    <meta charset="UTF-8">
+    <title>آیپری شعر و ملودی</title>
+    <style>
+        body {
+            font-family: 'Tahoma', sans-serif;
+            background-color: #f0f0f0;
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #004466;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #004466;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-  <h1>🎶 هایپری ملودی و شعر 🎶</h1>
-  <p>ارائه‌ی آثار هنری هویتی، فرهنگی، و مذهبی از جنوب ایران</p>
-  <p>طراحی شده توسط Morti</p>
-  <div class="footer">تماس: mortichan@github.io</div>
-</body>
-  <p><a href="settings.html">⚙️ تنظیمات سایت</a></p>
-</html>
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-  <meta charset="UTF-8">
-  <title>فروشگاه موزیک مرتی</title>
-  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" />
-  <style>
-    body {
-      font-family: Vazir, sans-serif;
-      direction: rtl;
-      background-color: #fdfdfd;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-    header {
-      background-color: #00695c;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-    }
-    header p {
-      margin-top: 10px;
-      font-size: 18px;
-    }
-    nav {
-      background-color: #e0f2f1;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: #004d40;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      padding: 40px 20px;
-      text-align: center;
-    }
-    main h2 {
-      color: #00695c;
-      font-size: 28px;
-    }
-    main p {
-      font-size: 16px;
-      line-height: 1.8;
-    }
-    footer {
-      background-color: #004d40;
-      color: #ccc;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>🎵 فروشگاه موزیک مرتی</h1>
-    <p>ملودی‌های نوستالژیک، شعرهای بندری، و خاطرات دیجیتال از جنوب ایران</p>
-  </header>
 
-  <nav>
-    <a href="#">خانه</a>
-    <a href="#">ملودی‌ها</a>
-    <a href="#">شعرها</a>
-    <a href="#">درباره‌ی من</a>
-    <a href="#">تماس با ما</a>
-  </nav>
+<header>
+    <h1>آیپری شعر و ملودی</h1>
+    <p>فروش ملودی، شعر، و ارتباط مستقیم با ما</p>
+</header>
 
-  <main>
-    <h2>به ژورنال دیجیتال مرتی خوش آمدید</h2>
-    <p>اینجا جاییه برای ثبت خاطرات، خلق ملودی‌های احساسی، و نمایش هنر جنوب ایران.</p>
-    <p>از بندر خورشهاب تا دل وب، با عشق و صدا می‌نویسم.</p>
-  </main>
+<nav>
+    <a href="#melody">فروش ملودی</a>
+    <a href="#upload">آپلود موزیک</a>
+    <a href="#contact">تماس با ما</a>
+</nav>
 
-  <footer>
-    © مرتی | طراحی شده با عشق از بندر خورشهاب
-  </footer>
+<section id="melody">
+    <h2>فروش ملودی</h2>
+    <p>برای شنیدن نمونه ملودی‌ها:</p>
+    <audio controls>
+        <source src="melody.mp3" type="audio/mpeg">
+        مرورگر شما از پخش موزیک پشتیبانی نمی‌کند.
+    </audio>
+</section>
+
+<section id="upload">
+    <h2>آپلود موزیک</h2>
+    <p>موزیک یا ملودی خود را اینجا آپلود کنید:</p>
+    <input type="file" accept="audio/*">
+</section>
+
+<section id="contact">
+    <h2>تماس با ما</h2>
+    <form>
+        <label for="name">نام شما:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">ایمیل:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">شماره تماس:</label>
+        <input type="text" id="phone" name="phone">
+
+        <label for="message">پیام شما:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">ارسال پیام</button>
+    </form>
+</section>
+
 </body>
 </html>
